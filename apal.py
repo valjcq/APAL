@@ -13,22 +13,21 @@ class Graph:
         juste une clé dans le dictionnaire des noeuds.
         """
         self.neighbours = {}
-        self.edges = []  # on stocke les arêtes sous forme de liste de tuples
-                                # (pas forcément utile)
+        self.edges = []  # on stocke les arêtes sous forme de liste de tuples (pas forcément utile)
 
     def add_edge(self, start: int, end: int):
         self.edges.append((start, end))
         if start not in self.neighbours:
-            self.neighbours[start] = {}
+            self.neighbours[start] = set({end})
         else:
-            self.neighbours[start].append(end)
+            self.neighbours[start] = {end} | self.neighbours[start]
         if end not in self.neighbours:
-            self.neighbours[end] = {}
+            self.neighbours[end] = set({start})
         else:
-            self.neighbours[end].append(start)
+            self.neighbours[end] = {start} | self.neighbours[end]
 
     def add_vertex(self, vertex: int):
-        self.neighbours[vertex] = {}
+        self.neighbours[vertex] = set({})
 
     def __str__(self):
         return f"Graph: {self.neighbours}"
@@ -41,9 +40,14 @@ graph = Graph()
 graph.add_vertex(1)
 graph.add_vertex(2)
 graph.add_vertex(3)
+graph.add_vertex(4)
+graph.add_vertex(5)
 graph.add_edge(1, 2)
+graph.add_edge(1, 3)
 graph.add_edge(2, 3)
-
+graph.add_edge(2, 4)
+graph.add_edge(4, 5)
+graph.add_edge(3, 5)
 
 def APAL(graph, treshold=0.5):
     """
@@ -64,7 +68,9 @@ def APAL(graph, treshold=0.5):
             if len(common_neighbours) > 0:
                 common_neighbours = common_neighbours | {node, neighbour}
                 if interconnectivity(common_neighbours) > treshold:
-                    set_communities = evaluate_communities(set_communities, common_neighbours, treshold)
+                    set_communities = evaluate_communities(
+                            set_communities, common_neighbours, treshold
+                            )
     return set_communities
 
 
