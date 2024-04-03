@@ -49,6 +49,43 @@ graph.add_edge(2, 4)
 graph.add_edge(4, 5)
 graph.add_edge(3, 5)
 
+
+def intraconnectivity(set_nodes, graph):
+    """
+    """
+    print(f"set_nodes: {set_nodes}")
+    k = 0
+    for node in set_nodes:
+        print(f"node: {node}")
+        k += len(set_nodes & graph.neighbours[node])
+    return k / (len(set_nodes) * (len(set_nodes) - 1))
+
+
+def evaluate_communities(set_communities, possible_community, treshold):
+    """
+    """
+    print(f"set_communities: {set_communities}")
+    print(f"possible_community: {possible_community}")
+    jaccard_M = 0
+    communities_M = set()
+    for community in set_communities:
+        jaccard = len(possible_community & community) / len(possible_community | community)
+        alpha = intraconnectivity(possible_community | community, graph)
+        if possible_community >= community:
+            return set_communities
+        elif community > possible_community:
+            set_communities = set_communities.pop(community)
+        elif jaccard > jaccard_M and jaccard > treshold and alpha > treshold:
+            jaccard_M = jaccard
+            communities_M = community | possible_community
+    if communities_M:
+        possible_community = communities_M
+    print(set_communities, type(set_communities))
+    print(possible_community, type(possible_community))
+    set_communities.append(possible_community)
+    return set_communities
+
+
 def APAL(graph, treshold=0.5):
     """
     Décrit une fonction APAL qui permet de distinguer des communautés
@@ -61,13 +98,13 @@ def APAL(graph, treshold=0.5):
         List[Graph]: Une liste de listes représentant les communautés
         détectées dans le graphe.
     """
-    set_communities = {}
+    set_communities = []
     for node in graph.neighbours:
         for neighbour in graph.neighbours[node]:
             common_neighbours = graph.neighbours[node] & graph.neighbours[neighbour]
             if len(common_neighbours) > 0:
                 common_neighbours = common_neighbours | {node, neighbour}
-                if interconnectivity(common_neighbours) > treshold:
+                if intraconnectivity(common_neighbours, graph) > treshold:
                     set_communities = evaluate_communities(
                             set_communities, common_neighbours, treshold
                             )
