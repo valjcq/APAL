@@ -1,0 +1,466 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": "Protein A"
+        },
+        {
+            "id": "Protein B"
+        },
+        {
+            "id": "YAL049C"
+        },
+        {
+            "id": "EGD2"
+        },
+        {
+            "id": "HOM3"
+        },
+        {
+            "id": "YGR271CA"
+        },
+        {
+            "id": "YBL044W"
+        },
+        {
+            "id": "YBR053C"
+        },
+        {
+            "id": "ECM32"
+        },
+        {
+            "id": "NOP13"
+        },
+        {
+            "id": "YLL014W"
+        },
+        {
+            "id": "YOR223W"
+        },
+        {
+            "id": "ERP2"
+        },
+        {
+            "id": "RNH70"
+        },
+        {
+            "id": "PEX22"
+        },
+        {
+            "id": "FUS1"
+        },
+        {
+            "id": "YBL057C"
+        },
+        {
+            "id": "SCS2"
+        },
+        {
+            "id": "YBL071CB"
+        },
+        {
+            "id": "YNL022C"
+        },
+        {
+            "id": "HHF1"
+        },
+        {
+            "id": "YML089C"
+        },
+        {
+            "id": "IML3"
+        },
+        {
+            "id": "YPL107W"
+        },
+        {
+            "id": "GRS1"
+        },
+        {
+            "id": "YKR046C"
+        },
+        {
+            "id": "YBR161W"
+        },
+        {
+            "id": "RCK2"
+        },
+        {
+            "id": "KTR3"
+        },
+        {
+            "id": "MSS18"
+        },
+        {
+            "id": "TDP1"
+        },
+        {
+            "id": "YJR003C"
+        },
+        {
+            "id": "YBR235W"
+        },
+        {
+            "id": "ADY3"
+        },
+        {
+            "id": "YCL046W"
+        },
+        {
+            "id": "YLR007W"
+        },
+        {
+            "id": "PRD1"
+        },
+        {
+            "id": "YHL039W"
+        },
+        {
+            "id": "PER1"
+        },
+        {
+            "id": "SAS5"
+        },
+        {
+            "id": "YDL023C"
+        },
+        {
+            "id": "YME1"
+        },
+        {
+            "id": "COX9"
+        },
+        {
+            "id": "YHR162W"
+        },
+        {
+            "id": "YDL121C"
+        },
+        {
+            "id": "HIS2"
+        },
+        {
+            "id": "YDL183C"
+        },
+        {
+            "id": "SPC1"
+        },
+        {
+            "id": "YDR034WB"
+        },
+        {
+            "id": "JNM1"
+        },
+        {
+            "id": "YDR100W"
+        },
+        {
+            "id": "YDR540C"
+        },
+        {
+            "id": "YDR179C"
+        },
+        {
+            "id": "ESC4"
+        },
+        {
+            "id": "ESC2"
+        },
+        {
+            "id": "POR1"
+        },
+        {
+            "id": "SNM1"
+        },
+        {
+            "id": "YLR434C"
+        },
+        {
+            "id": "YDR492W"
+        },
+        {
+            "id": "RPD3"
+        },
+        {
+            "id": "YDR504C"
+        },
+        {
+            "id": "ERG1"
+        },
+        {
+            "id": "STL1"
+        },
+        {
+            "id": "YMR210W"
+        },
+        {
+            "id": "GPA2"
+        },
+        {
+            "id": "YOR389W"
+        },
+        {
+            "id": "THO1"
+        },
+        {
+            "id": "YOR356W"
+        },
+        {
+            "id": "GLO3"
+        },
+        {
+            "id": "ECM12"
+        },
+        {
+            "id": "HSP12"
+        },
+        {
+            "id": "YOR394CA"
+        },
+        {
+            "id": "YFR026C"
+        },
+        {
+            "id": "MRPL33"
+        },
+        {
+            "id": "ECO1"
+        },
+        {
+            "id": "YLR161W"
+        },
+        {
+            "id": "YGL176C"
+        },
+        {
+            "id": "SUC2"
+        },
+        {
+            "id": "ZRT1"
+        },
+        {
+            "id": "BOP2"
+        },
+        {
+            "id": "BUD9"
+        },
+        {
+            "id": "YPT6"
+        },
+        {
+            "id": "YGR051C"
+        },
+        {
+            "id": "ECM40"
+        },
+        {
+            "id": "YGR096W"
+        },
+        {
+            "id": "YLL017W"
+        },
+        {
+            "id": "YGR165W"
+        },
+        {
+            "id": "BUB3"
+        },
+        {
+            "id": "YML122C"
+        },
+        {
+            "id": "ERP5"
+        },
+        {
+            "id": "YNL140C"
+        }
+    ],
+    "links": [
+        {
+            "source": "Protein A",
+            "target": "Protein B"
+        },
+        {
+            "source": "YAL049C",
+            "target": "EGD2"
+        },
+        {
+            "source": "HOM3",
+            "target": "YGR271CA"
+        },
+        {
+            "source": "YBL044W",
+            "target": "YBR053C"
+        },
+        {
+            "source": "ECM32",
+            "target": "NOP13"
+        },
+        {
+            "source": "YLL014W",
+            "target": "YOR223W"
+        },
+        {
+            "source": "ERP2",
+            "target": "RNH70"
+        },
+        {
+            "source": "RNH70",
+            "target": "YML122C"
+        },
+        {
+            "source": "PEX22",
+            "target": "FUS1"
+        },
+        {
+            "source": "YBL057C",
+            "target": "SCS2"
+        },
+        {
+            "source": "YBL071CB",
+            "target": "YNL022C"
+        },
+        {
+            "source": "HHF1",
+            "target": "YML089C"
+        },
+        {
+            "source": "IML3",
+            "target": "YPL107W"
+        },
+        {
+            "source": "GRS1",
+            "target": "YKR046C"
+        },
+        {
+            "source": "YBR161W",
+            "target": "RCK2"
+        },
+        {
+            "source": "KTR3",
+            "target": "MSS18"
+        },
+        {
+            "source": "TDP1",
+            "target": "YJR003C"
+        },
+        {
+            "source": "YBR235W",
+            "target": "ADY3"
+        },
+        {
+            "source": "YCL046W",
+            "target": "YLR007W"
+        },
+        {
+            "source": "PRD1",
+            "target": "YHL039W"
+        },
+        {
+            "source": "PER1",
+            "target": "SAS5"
+        },
+        {
+            "source": "YDL023C",
+            "target": "YME1"
+        },
+        {
+            "source": "COX9",
+            "target": "YHR162W"
+        },
+        {
+            "source": "YDL121C",
+            "target": "HIS2"
+        },
+        {
+            "source": "YDL183C",
+            "target": "SPC1"
+        },
+        {
+            "source": "YDR034WB",
+            "target": "JNM1"
+        },
+        {
+            "source": "YDR100W",
+            "target": "YDR540C"
+        },
+        {
+            "source": "YDR179C",
+            "target": "ESC4"
+        },
+        {
+            "source": "ESC2",
+            "target": "POR1"
+        },
+        {
+            "source": "SNM1",
+            "target": "YLR434C"
+        },
+        {
+            "source": "YDR492W",
+            "target": "RPD3"
+        },
+        {
+            "source": "YDR504C",
+            "target": "ERG1"
+        },
+        {
+            "source": "STL1",
+            "target": "YMR210W"
+        },
+        {
+            "source": "GPA2",
+            "target": "YOR389W"
+        },
+        {
+            "source": "THO1",
+            "target": "YOR356W"
+        },
+        {
+            "source": "GLO3",
+            "target": "ECM12"
+        },
+        {
+            "source": "HSP12",
+            "target": "YOR394CA"
+        },
+        {
+            "source": "YFR026C",
+            "target": "MRPL33"
+        },
+        {
+            "source": "ECO1",
+            "target": "YLR161W"
+        },
+        {
+            "source": "YGL176C",
+            "target": "SUC2"
+        },
+        {
+            "source": "ZRT1",
+            "target": "BOP2"
+        },
+        {
+            "source": "BUD9",
+            "target": "YPT6"
+        },
+        {
+            "source": "YGR051C",
+            "target": "ECM40"
+        },
+        {
+            "source": "YGR096W",
+            "target": "YLL017W"
+        },
+        {
+            "source": "YGR165W",
+            "target": "BUB3"
+        },
+        {
+            "source": "ERP5",
+            "target": "YNL140C"
+        }
+    ]
+}

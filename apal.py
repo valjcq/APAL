@@ -1,3 +1,5 @@
+import json
+
 class Graph:
     def __init__(self):
         """
@@ -26,7 +28,7 @@ class Graph:
         else:
             self.neighbours[end] = {start} | self.neighbours[end]
 
-    def add_vertex(self, vertex: int):
+    def add_vertex(self, vertex):
         self.neighbours[vertex] = set({})
 
     def __str__(self):
@@ -34,20 +36,6 @@ class Graph:
 
     def __repr__(self):
         return f"Graph: {self.neighbours}"
-
-
-graph = Graph()
-graph.add_vertex(1)
-graph.add_vertex(2)
-graph.add_vertex(3)
-graph.add_vertex(4)
-graph.add_vertex(5)
-graph.add_edge(1, 2)
-graph.add_edge(1, 3)
-graph.add_edge(2, 3)
-graph.add_edge(2, 4)
-graph.add_edge(4, 5)
-graph.add_edge(3, 5)
 
 
 def intraconnectivity(set_nodes, graph):
@@ -61,7 +49,7 @@ def intraconnectivity(set_nodes, graph):
     return k / (len(set_nodes) * (len(set_nodes) - 1))
 
 
-def evaluate_communities(set_communities, possible_community, treshold):
+def evaluate_communities(set_communities: set, possible_community:set, treshold:float):
     """
     """
     print(f"set_communities: {set_communities}")
@@ -111,4 +99,19 @@ def APAL(graph, treshold=0.5):
     return set_communities
 
 
-APAL(graph)
+if __name__ == "__main__":
+
+    with open("graph_union_data.json", "r") as file:
+        data = json.load(file)
+
+    # Create a Graph object and populate it with data from the JSON file
+    graph = Graph()
+    for edge in data["links"]:
+        graph.add_edge(edge["source"], edge["target"])
+
+    # Call the APAL function with the graph object
+    communities = APAL(graph, treshold=0.7)
+
+    # Print the detected communities
+    for i, community in enumerate(communities):
+        print(f"Community {i+1}: {community}")

@@ -7,7 +7,7 @@ ATTENDUS:
 
 Maquette (code pour que l'algo fonctionne)
 Compte rendu: - Explication algo
-- Mise en oeuvre
+- Mise en oeuvre - Difficultés rencontrées
 - Résultats
 - Différence par rapport aux résultats de l'article
 - Oral avec tous un discours (PowerPoint ?)
