@@ -1,0 +1,15 @@
+Les images APAL_omega_OGG.png et APAL_alpha_OGG.png sont les résultats obtenus dans la publication comme étant les figures 4 et 5 respectivement.
+On remarque les mêmes résultats que ceux obtenus dans la publication, dans l'impact des variables sur le score en fonction du paramètre t. Mais les résultats sont moins convaicant.
+(Donner un exemple de résultat moins convaincant)
+Ca peut être à cause de OGG qui a été réglé différemenent: on n'a pas tous les paramètres de réglage de OGG, malgré qu'on utilise exactement le même code normalement.
+
+Les images graph_RRS_image.png, graph_binaryGS_image.png, graph_union_image.png et graph_PRS_image.png sont les résultats obtenus avec l'algorithme APAL mettant en valeur les communnautées détectées.
+Dans la publication, les communnautées détéctées ne sont pas données, on ne peut donc pas vérifier si les résultats sont corrects. Surtout que comme expiqué précedemment, les données utilisées ne sont pas exactement les mêmes.
+On pourrait comparer le score NMI obtenus sur notre graph, avec nos données et les données de la publication pour voir si les résultats sont cohérents, or on n'a pas de données regroupant les "vraies" communnautées, dans l'article
+elles sont décrites mais aucune source n'est donnée pour les obtenir.
+Néanmoins, on a rechercher une des communnautées obtenues à partir de nos données par rapport à une base de données et on a trouvé des résultats cohérents.
+
+
+Dans une autre idée, on a essayé APAl sur nos données biologique avec différentes valeur de t, les résultats obtenues sont toutes les mêmes pour 0.2, 0.5 et 0.8.
+Sauf dans le graph union, qui nous donne une sous communautée en plus pour t=0.8 par rapport à t = 0.5.
+On a ensuite fait une analyse de cette communauté sur la base de donnée: (demande à lucas)

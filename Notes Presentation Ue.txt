@@ -1,0 +1,14 @@
+On est tous sur le même problème mais on le voit à partir de différents algo: recherche de communauté (sachant qu'une personne peut appartenir à plusieurs communauté, pas comme dans la classification).
+
+Utilité dans réseaux biologique, mais aussi réseaux sociaux. 
+Survey = Article qui fait un résumé de tous les algo utilisés dans un domaine, présentation générale de celui-ci.
+
+ATTENDUS:
+
+Maquette (code pour que l'algo fonctionne)
+Compte rendu: - Explication algo
+- Mise en oeuvre - Difficultés rencontrées
+- Résultats
+- Différence par rapport aux résultats de l'article
+- Oral avec tous un discours (PowerPoint ?)
+- 

@@ -1,4 +1,0 @@
-PUBMED	http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=search&term=NAME
-SGD	http://db.yeastgenome.org/cgi-bin/SGD/locus.pl?locus=NAME
-CYGD	http://mips.gsf.de/genre/proj/yeast/searchEntryAction.do?text=NAME&db=CYGD
-PPI	http://mips.gsf.de/cgi-bin/proj/yeast/search_PPI.pl?searchstring=NAME&list=ORF&typep=physical&typeg=genetic
